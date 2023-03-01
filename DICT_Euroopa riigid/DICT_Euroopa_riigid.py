@@ -8,15 +8,15 @@ while True:
     if menu=="1":
         sõnastik=Loe_failist("riigid_pealinnad.txt")
     elif menu=="2":
-        Kirjuta_failisse("riigid_pealinnad")
+        Kirjuta_failisse("riigid_pealinnad.txt")
     elif menu=="3":
         print()
     elif menu=="4":
-        vaata_sõnastiku("riigid_pealinnad")
+        vaata_sõnastiku("riigid_pealinnad.txt")
     elif menu=="5":
-        riik_ja_pealinn_näita("riigid_pealinnad")
+        riik_ja_pealinn_näita("riigid_pealinnad.txt")
     elif menu=="6":
-        paranda("riigid_pealinnad")
+        paranda("riigid_pealinnad.txt")
     elif menu=="7":
-        test("riigid_pealinnad")
+        test("riigid_pealinnad.txt")
         
