@@ -23,7 +23,7 @@ def Kirjuta_failisse(fail:dict):
     """
     sisetab failise
     """
-    file=open("riigid_pealinnad.txt",'r',encoding="utf-8-sig")
+    file=open(fail,'r',encoding="utf-8-sig")
     for line in file:
         k, v=line.strip().split('-')
         sõnastik[k.strip()] = v.strip()    
@@ -44,7 +44,7 @@ def vaata_sõnastiku(fail:dict):
     """
     riik_pealinn={}
     pealinn_riik={}
-    file=open("riigid_pealinnad.txt",'r',encoding="utf-8-sig")
+    file=open(fail,'r',encoding="utf-8-sig")
     for line in file:
         k, v=line.strip().split('-')       
         riik_pealinn[k]=v
@@ -57,7 +57,7 @@ def riik_ja_pealinn_näita(fail:dict):
     """
     näitab riigi ja pealinna
     """
-    file=open("riigid_pealinnad.txt",'r',encoding="utf-8-sig")
+    file=open(fail,'r',encoding="utf-8-sig")
     for line in file:
         k, v=line.strip().split('-')
         sõnastik[k.strip()] = v.strip()
@@ -86,7 +86,7 @@ def paranda(fail: dict):
     """
     parandab andmed failis
     """
-    with open('riigid_pealinnad.txt', 'r', encoding='utf-8-sig') as file:
+    file=open(fail,'r',encoding="utf-8-sig")
         for line in file:
             k, v = line.strip().split('-')
             sõnastik[k.strip()] = v.strip()
@@ -129,7 +129,7 @@ def test(fail:dict):
     a=[]
     võit=kaotus=0
     game=[]
-    file=open("riigid_pealinnad.txt",'r',encoding="utf-8-sig")
+    file=open(fail,'r',encoding="utf-8-sig")
     for line in file:
         k, v=line.strip().split('-')
         sõnastik[k.strip()] = v.strip()
